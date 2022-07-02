@@ -1,0 +1,26 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+
+  @media only screen and (max-width: 1400px) {
+    font-size: 40%;
+  }
+}
+
+body {
+  box-sizing: border-box;
+  background-color: $bg-white;
+}
+
+// ::selection {
+//   background-color: $color-primary;
+//   color: $color-white;
+// }

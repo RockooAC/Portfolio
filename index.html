@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Piotr's Site</title>
+    <meta name="description" content="Page about me" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+    <script defer src="/js/index.js"></script>
+  </head>
+  <body>
+    <header id="header" class="header">
+      <nav class="diagonal-hero-bg navigation">
+        <a class="navigation__link" href="#header">PL</a>
+        <a class="navigation__link" href="#header">HOME</a>
+        <a class="navigation__link" href="#">ABOUT ME</a>
+        <a class="navigation__link" href="#">MY SITES</a>
+        <a class="navigation__link" href="#">COOL STUFF</a>
+      </nav>
+      <div class="header__box">
+        <div class="header__box-text">
+          Welcome at my site<br />
+          <span class="header__box-fancy">
+            where you can find<br />
+            my projects and some<br />
+            informations about me.
+            <br />
+          </span>
+        </div>
+        <div class="header__box-name">
+          <h1>Hi, my name is</h1>
+          <h1>Piotr.</h1>
+        </div>
+      </div>
+    </header>
+    <main class="main__section">
+      <section class="section__certificates">
+        <h2 class="cert__heading">My Courses</h2>
+        <div class="cert__card cert__card-1">
+          <div class="cert__card-img">
+            <img
+              src="/img/card-1.jpg"
+              alt="card 1 photo"
+              class="cert__card-photo"
+            />
+          </div>
+          <div class="cert__card-info">
+            <div class="cert__card-heading">
+              <h3>Css</h3>
+              <p><span class="completed">Completed</span></p>
+            </div>
+            <hr />
+            <br />
+            Course about how to start with css, how it works and how to start
+            your journey with web development. <br />
+            Made by Johnas Shmedtman.
+          </div>
+          <button class="cert__card-btn cert__card-btn-1">Show cert</button>
+          <a
+            href="https://www.udemy.com/course/design-and-develop-a-killer-website-with-html5-and-css3/"
+            target="_blank"
+            class="cert__card-link cert__card-link-1"
+            >Link to course</a
+          >
+        </div>
+
+        <div class="cert__card cert__card-2">
+          <div class="cert__card-info">
+            <div class="cert__card-heading">
+              <h3>Css and Sass</h3>
+              <p><span class="completed">Completed</span></p>
+            </div>
+            <hr />
+            <br />
+            Second Jhonas cours which showed me how css works, how to do
+            animations and make real responsive site. Also what is sass and how
+            to use it.
+          </div>
+          <div class="cert__card-img">
+            <img
+              src="/img/card-2.jpg"
+              alt="card 2 photo"
+              class="cert__card-photo"
+            />
+          </div>
+          <button class="cert__card-btn cert__card-btn-2">Show cert</button>
+          <a
+            href="https://www.udemy.com/course/advanced-css-and-sass/"
+            target="_blank"
+            class="cert__card-link cert__card-link-2"
+            >Link to course</a
+          >
+        </div>
+        <div class="cert__card cert__card-3">
+          <div class="cert__card-img">
+            <img
+              src="/img/card-3.jpg"
+              alt="card 3 photo"
+              class="cert__card-photo"
+            />
+          </div>
+          <div class="cert__card-info">
+            <div class="cert__card-heading">
+              <h3>Javascript</h3>
+              <p><span class="completed">Completed</span></p>
+            </div>
+            <hr />
+            <br />
+            This one was all about javascript, how to use it and how it works
+            behind sceen.
+          </div>
+          <button class="cert__card-btn cert__card-btn-3">Show cert</button>
+          <a
+            href="https://www.udemy.com/course/the-complete-javascript-course/"
+            target="_blank"
+            class="cert__card-link cert__card-link-3"
+            >Link to course</a
+          >
+        </div>
+        <div class="cert__card cert__card-4">
+          <div class="cert__card-info">
+            <div class="cert__card-heading">
+              <h3>Web Design</h3>
+              <p><span class="uncompleted">Uncompleted</span></p>
+            </div>
+            <hr />
+            <br />
+            Course that I am actually working on is about how to become a web
+            developer and web designer, it consists as well a lot of cool stuff
+            like git node.js react and many more.
+          </div>
+          <div class="cert__card-img">
+            <img
+              src="/img/card-4.jpg"
+              alt="card 4 photo"
+              class="cert__card-photo"
+            />
+          </div>
+          <button class="cert__card-btn cert__card-btn-4">Show cert</button>
+          <a
+            href="https://www.udemy.com/course/the-complete-web-development-bootcamp/"
+            target="_blank"
+            class="cert__card-link cert__card-link-4"
+            >Link to course</a
+          >
+        </div>
+      </section>
+      <div class="popup popup-1 hidden" id="popup">
+        <div class="popup__content">
+          <img src="img/cert-css.jpg" alt="css" />
+        </div>
+      </div>
+      <div class="overlay hidden"></div>
+      <div class="popup popup-2 hidden" id="popup">
+        <div class="popup__content">
+          <img src="img/cert-sass.jpg" alt="sass" />
+        </div>
+      </div>
+      <div class="overlay hidden"></div>
+      <div class="popup popup-3 hidden" id="popup">
+        <div class="popup__content">
+          <img src="img/cert-javascrit.jpg" alt="javascript" />
+        </div>
+      </div>
+      <div class="popup popup-4 hidden" id="popup">
+        <div class="popup__content">
+          Trying my best to finish this cours as quickly as possible.
+        </div>
+      </div>
+      <div class="overlay hidden"></div>
+
+      <section class="section__projects">
+        <h2 class="projects__heading">Projects</h2>
+        <div class="project__card project__card-1">
+          <img class="project__card-img" src="img/cardtest.jpg" alt="test" />
+          <div class="project__card-desc">
+            <h3 class="project__card-heading">Features</h3>
+            <ul class="project__card-list">
+              <li class="project__card-item">
+                <svg class="project__card-item-style">
+                  <use
+                    xlink:href="img/sprites.svg#icon-chevron-small-right"
+                  ></use></svg
+                >elo
+              </li>
+              <li class="project__card-item">
+                <svg class="project__card-item-style">
+                  <use
+                    xlink:href="img/sprites.svg#icon-chevron-small-right"
+                  ></use></svg
+                >mordo
+              </li>
+              <li class="project__card-item">
+                <svg class="project__card-item-style">
+                  <use
+                    xlink:href="img/sprites.svg#icon-chevron-small-right"
+                  ></use></svg
+                >na
+              </li>
+              <li class="project__card-item">
+                <svg class="project__card-item-style">
+                  <use
+                    xlink:href="img/sprites.svg#icon-chevron-small-right"
+                  ></use></svg
+                >ryneczku
+              </li>
+            </ul>
+            <a href="#" class="project__card-link">Show project</a>
+          </div>
+        </div>
+        <div class="project__card project__card-2">
+          <img class="project__card-img" src="img/cardtest.jpg" alt="test" />
+          <div class="project__card-desc">
+            <h3 class="project__card-heading">Features</h3>
+            <ul class="project__card-list">
+              <li class="project__card-item">
+                <svg class="project__card-item-style">
+                  <use
+                    xlink:href="img/sprites.svg#icon-chevron-small-right"
+                  ></use></svg
+                >elo
+              </li>
+              <li class="project__card-item">
+                <svg class="project__card-item-style">
+                  <use
+                    xlink:href="img/sprites.svg#icon-chevron-small-right"
+                  ></use></svg
+                >mordo
+              </li>
+              <li class="project__card-item">
+                <svg class="project__card-item-style">
+                  <use
+                    xlink:href="img/sprites.svg#icon-chevron-small-right"
+                  ></use></svg
+                >na
+              </li>
+              <li class="project__card-item">
+                <svg class="project__card-item-style">
+                  <use
+                    xlink:href="img/sprites.svg#icon-chevron-small-right"
+                  ></use></svg
+                >ryneczku
+              </li>
+            </ul>
+            <a href="#" class="project__card-link">Show project</a>
+          </div>
+        </div>
+        <div class="project__card project__card-3">
+          <img class="project__card-img" src="img/cardtest.jpg" alt="test" />
+          <div class="project__card-desc">
+            <h3 class="project__card-heading">Features</h3>
+            <ul class="project__card-list">
+              <li class="project__card-item">
+                <svg class="project__card-item-style">
+                  <use
+                    xlink:href="img/sprites.svg#icon-chevron-small-right"
+                  ></use></svg
+                >elo
+              </li>
+              <li class="project__card-item">
+                <svg class="project__card-item-style">
+                  <use
+                    xlink:href="img/sprites.svg#icon-chevron-small-right"
+                  ></use></svg
+                >mordo
+              </li>
+              <li class="project__card-item">
+                <svg class="project__card-item-style">
+                  <use
+                    xlink:href="img/sprites.svg#icon-chevron-small-right"
+                  ></use></svg
+                >na
+              </li>
+              <li class="project__card-item">
+                <svg class="project__card-item-style">
+                  <use
+                    xlink:href="img/sprites.svg#icon-chevron-small-right"
+                  ></use></svg
+                >ryneczku
+              </li>
+            </ul>
+            <a href="#" class="project__card-link">Show project</a>
+          </div>
+        </div>
+      </section>
+      <section class="section__aboutme">
+        <div class="aboutme__gradient">
+          <div class="aboutme__box">
+            <div class="aboutme__box-photo"></div>
+            <div class="aboutme__box-desc">
+              <h3 class="aboutme__box-heading">Short info about me.</h3>
+
+              <p class="aboutme__box-info">
+                My name is Piotr Ludkowski. <br /><br />
+                I started learning web development to find a job that would make
+                me happy and willing to develop. <br /><br />
+                Above you have seen what I am capable of. My goal is to learn
+                React and find a suitable job. At present, I am working on the
+                basics of node.js, MongoDB and React. <br /><br />
+                I hope you found something interesting in here, and it was
+                pleasure to have you here.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <hr />
+    <footer class="footer">
+      <div class="footer__box">
+        <span class="footer__text">
+          If you want to contact me, check my &nbsp;</span
+        >
+        <a
+          href="https://www.linkedin.com/in/piotr-ludkowski-347ba0236/"
+          target="_blank"
+          class="footer__text footer__btn"
+        >
+          Linkedin &nbsp;
+          <svg class="footer__icon">
+            <use xlink:href="img/sprites.svg#icon-linkedin"></use>
+          </svg>
+        </a>
+        <a href="#header" class="footer__top">
+          <svg>
+            <use xlink:href="img/sprites.svg#icon-chevron-thin-up"></use></svg
+        ></a>
+      </div>
+      <span class="footer__copy"
+        >Copyright &copy; 2022 Piotr Ludkowski. All rights reserved.</span
+      >
+    </footer>
+  </body>
+</html>

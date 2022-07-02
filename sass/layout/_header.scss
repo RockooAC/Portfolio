@@ -1,0 +1,90 @@
+.header {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 1fr 9fr;
+  padding: 4rem 10rem 0;
+  background-image: linear-gradient(
+      rgba($color-black, 0.7),
+      rgba($color-black, 0.7)
+    ),
+    url(../../img/forest-big.jpg);
+  background-size: cover;
+
+  &__box {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+
+    @media only screen and (max-width: 1000px) {
+      grid-template-columns: 1fr;
+    }
+
+    &-text {
+      color: $main-text-white;
+      font-size: 9.6rem;
+      font-weight: 700;
+      line-height: 1.1;
+      padding-top: 26rem;
+
+      @media only screen and (max-width: 1000px) {
+        padding-top: 0;
+        justify-self: center;
+      }
+    }
+
+    &-fancy {
+      color: transparent;
+      -webkit-background-clip: text;
+      @include main-gradient;
+      background-size: 200%;
+      animation: header-bg-animation 20s infinite alternate;
+    }
+
+    &-name {
+      padding-top: 10rem;
+
+      @media only screen and (max-width: 1000px) {
+        grid-row: 1/2;
+        justify-self: end;
+        padding-right: 20rem;
+      }
+    }
+
+    &-name h1:nth-child(1) {
+      color: $main-text-white;
+      font-family: monospace;
+      font-weight: 800;
+      font-size: 3rem;
+      margin: 0 0 0 22%;
+      text-align: left;
+      white-space: nowrap;
+      overflow: hidden;
+      width: 45%;
+      animation: header-type 2s steps(40, end) forwards;
+
+      @media only screen and (max-width: 1000px) {
+        width: 70%;
+      }
+    }
+
+    &-name h1:nth-child(2) {
+      opacity: 0;
+      font-family: "Work Sans", sans-serif;
+      margin: 0 auto auto auto;
+      @include main-gradient;
+      background-size: 150%;
+      font-weight: 800;
+      font-size: 12rem;
+      width: 70%;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      overflow: hidden;
+      animation: header-shring-animation 2.2s steps(40, end) 2s forwards,
+        header-blink 0.5s step-end infinite alternate;
+
+      @media only screen and (max-width: 1000px) {
+        width: 110%;
+        background-size: 250%;
+      }
+    }
+  }
+}

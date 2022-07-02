@@ -1,0 +1,59 @@
+@keyframes header-bg-animation {
+  0% {
+    background-position: left;
+  }
+  100% {
+    background-position: right;
+  }
+}
+
+@keyframes header-shring-animation {
+  0% {
+    background-position: 0 0;
+    opacity: 0;
+    width: 0;
+  }
+  1% {
+    background-position: 0 0;
+    opacity: 1;
+    border-right: 1px solid #fff;
+  }
+  50% {
+    background-position: 150px 0;
+    opacity: 1;
+    border-right: 1px solid #fff;
+  }
+  100% {
+    background-position: 450px 0;
+    opacity: 1;
+    border-right: 1px solid #fff;
+  }
+}
+
+@keyframes header-type {
+  0% {
+    width: 0;
+  }
+  1%,
+  99% {
+    border-right: 1px solid #fff;
+  }
+  100% {
+    border-right: none;
+  }
+}
+
+@keyframes header-blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+@keyframes header-text-show {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
