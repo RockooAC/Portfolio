@@ -14,7 +14,7 @@
     display: grid;
     grid-template-columns: 2fr 1fr;
 
-    @media only screen and (max-width: 1000px) {
+    @media only screen and (max-width: $medium2-screen) {
       grid-template-columns: 1fr;
     }
 
@@ -25,9 +25,30 @@
       line-height: 1.1;
       padding-top: 26rem;
 
-      @media only screen and (max-width: 1000px) {
+      @media only screen and (max-width: $big-screen) {
+        font-size: 8rem;
+        padding-top: 20rem;
+      }
+
+      @media only screen and (max-width: $big2-screen) {
+        padding-top: 26rem;
+      }
+
+      @media only screen and (max-width: $medium-screen) {
         padding-top: 0;
-        justify-self: center;
+        font-size: 6.5rem;
+        align-self: end;
+        padding-bottom: 5rem;
+      }
+      @media only screen and (max-width: $medium2-screen) {
+        font-size: 8rem;
+        grid-row: 2/3;
+      }
+      @media only screen and (max-width: $small-screen) {
+        font-size: 7rem;
+      }
+      @media only screen and (max-width: $mini-screen) {
+        font-size: 6rem;
       }
     }
 
@@ -42,10 +63,18 @@
     &-name {
       padding-top: 10rem;
 
-      @media only screen and (max-width: 1000px) {
-        grid-row: 1/2;
+      @media only screen and (max-width: $medium2-screen) {
         justify-self: end;
-        padding-right: 20rem;
+        padding-right: 10rem;
+        padding-top: 2rem;
+      }
+
+      @media only screen and (max-width: $small-screen) {
+        padding-top: 10rem;
+      }
+      @media only screen and (max-width: $mini-screen) {
+        padding-top: 20rem;
+        justify-self: center;
       }
     }
 
@@ -61,8 +90,19 @@
       width: 45%;
       animation: header-type 2s steps(40, end) forwards;
 
-      @media only screen and (max-width: 1000px) {
-        width: 70%;
+      @media only screen and (max-width: $big-screen) {
+        font-size: 2.5rem;
+      }
+      @media only screen and (max-width: $medium-screen) {
+        font-size: 3rem;
+        width: 60%;
+      }
+      @media only screen and (max-width: $small-screen) {
+        width: 80%;
+      }
+      @media only screen and (max-width: $mini-screen) {
+        font-size: 4rem;
+        width: 100%;
       }
     }
 
@@ -81,9 +121,29 @@
       animation: header-shring-animation 2.2s steps(40, end) 2s forwards,
         header-blink 0.5s step-end infinite alternate;
 
-      @media only screen and (max-width: 1000px) {
-        width: 110%;
+      @media only screen and (max-width: $big-screen) {
+        font-size: 10rem;
+      }
+      @media only screen and (max-width: $big2-screen) {
+        background-size: 200%;
+      }
+      @media only screen and (max-width: $medium-screen) {
+        font-size: 8rem;
         background-size: 250%;
+      }
+      @media only screen and (max-width: $medium2-screen) {
+        font-size: 14rem;
+        width: 100%;
+      }
+      @media only screen and (max-width: $small-screen) {
+        font-size: 10rem;
+      }
+      @media only screen and (max-width: $small3-screen) {
+        background-size: 300%;
+      }
+
+      @media only screen and (max-width: $mini-screen) {
+        font-size: 12rem;
       }
     }
   }

@@ -20,12 +20,14 @@
   </head>
   <body>
     <header id="header" class="header">
-      <nav class="diagonal-hero-bg navigation">
-        <a class="navigation__link" href="#header">PL</a>
-        <a class="navigation__link" href="#experience">MY EXPERIENCE</a>
-        <a class="navigation__link" href="#projects">MY PROJECTS</a>
-        <a class="navigation__link" href="#aboutme">ABOUT ME</a>
-      </nav>
+      <div class="nav__box">
+        <a class="navigation__link navigation__link-logo" href="#header">PL</a>
+        <nav class="diagonal-hero-bg navigation">
+          <a class="navigation__link" href="#experience">MY EXPERIENCE</a>
+          <a class="navigation__link" href="#projects">MY PROJECTS</a>
+          <a class="navigation__link" href="#aboutme">ABOUT ME</a>
+        </nav>
+      </div>
       <div class="header__box">
         <div class="header__box-text">
           Welcome at my site<br />
@@ -242,8 +244,9 @@
                 I started learning web development to find a job that would make
                 me happy and willing to develop. <br /><br />
                 Above you have seen what I am capable of. My goal is to become a
-                web developer and find a suitable job. At present, I am working
-                on the basics of node.js, MongoDB and React. <br /><br />
+                professional web developer and find a suitable job. At present,
+                I am working on the basics of node.js, MongoDB and React.
+                <br /><br />
                 I hope you found something interesting in here.
               </p>
             </div>
@@ -262,10 +265,12 @@
           target="_blank"
           class="footer__text footer__btn"
         >
-          Linkedin &nbsp;
-          <svg class="footer__icon">
-            <use xlink:href="img/sprites.svg#icon-linkedin"></use>
-          </svg>
+          <span class="footer__linkedin">
+            Linkedin &nbsp;
+            <svg class="footer__icon">
+              <use xlink:href="img/sprites.svg#icon-linkedin"></use>
+            </svg>
+          </span>
         </a>
         <a href="#header" class="footer__top">
           <svg>

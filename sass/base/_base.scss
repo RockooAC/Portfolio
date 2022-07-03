@@ -10,8 +10,16 @@ html {
   font-size: 62.5%;
   scroll-behavior: smooth;
 
-  @media only screen and (max-width: 1400px) {
+  @media only screen and (max-width: $big2-screen) {
+    font-size: 50%;
+  }
+
+  @media only screen and (max-width: $medium2-screen) {
     font-size: 40%;
+  }
+
+  @media only screen and (max-width: $small3-screen) {
+    font-size: 35%;
   }
 }
 

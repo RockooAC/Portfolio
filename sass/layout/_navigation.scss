@@ -1,9 +1,22 @@
+.nav__box {
+  display: flex;
+
+  @media only screen and (max-width: $small-screen) {
+    flex-direction: column;
+  }
+}
+
 .navigation {
+  margin-left: auto;
   display: flex;
   gap: 12px;
   align-items: center;
   justify-content: end;
   height: 80px;
+
+  @media only screen and (max-width: $small-screen) {
+    display: none;
+  }
 
   &__link:link,
   &__link:visited {
@@ -14,15 +27,6 @@
     color: $main-text-white;
     display: inline-block;
     position: relative;
-  }
-
-  &__link:first-child {
-    font-family: "Work Sans", sans-serif;
-    margin-right: auto;
-    padding: 0;
-    /* margin-left: 30px; */
-    font-size: 7rem;
-    transition: all 2s;
   }
 
   &__link:hover,
@@ -45,5 +49,17 @@
 
   &__link:hover::before {
     transform: scaleX(1);
+  }
+}
+
+.navigation__link-logo {
+  font-family: "Work Sans", sans-serif;
+  padding: 0;
+  font-size: 7rem !important;
+  transition: all 2s;
+
+  @media only screen and (max-width: $small-screen) {
+    font-size: 5rem;
+    align-self: flex-start;
   }
 }
