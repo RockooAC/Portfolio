@@ -1,6 +1,6 @@
 .cert__card {
   height: 25rem;
-  box-shadow: 0 0 1rem rgb(0, 0, 0);
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.4);
   overflow: hidden;
   display: flex;
   position: relative;
@@ -85,7 +85,7 @@
     font-size: 1.7rem;
     border-bottom: 1px solid $main-orange;
     border-right: 1px solid $main-orange;
-    box-shadow: 0 0 0.1rem rgb(0, 0, 0);
+    // box-shadow: 0 0 0.1rem rgb(0, 0, 0);
   }
 
   &-btn-2,
@@ -101,7 +101,7 @@
     border-right: none;
     border-bottom: 1px solid $main-orange;
     border-left: 1px solid $main-orange;
-    box-shadow: 0 0 0.1rem rgb(0, 0, 0);
+    // box-shadow: 0 0 0.1rem rgb(0, 0, 0);
   }
 
   &-link {
@@ -129,6 +129,6 @@
     transform: translateY(-0.7rem);
     font-size: 1.7rem;
     border-bottom: 1px solid $main-orange;
-    box-shadow: 0 0 0.1rem rgb(0, 0, 0);
+    // box-shadow: 0 0 0.1rem rgb(0, 0, 0);
   }
 }
