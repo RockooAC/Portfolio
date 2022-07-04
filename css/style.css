@@ -120,7 +120,7 @@ body {
   .cert__card-heading .completed {
     color: green; }
   .cert__card-heading .uncompleted {
-    color: red; }
+    color: #c3c34f; }
   .cert__card-img {
     height: 100%;
     width: 33.3333%;
@@ -216,7 +216,8 @@ body {
   transition: all 0.4s;
   backface-visibility: hidden;
   height: 40rem;
-  background-size: cover; }
+  background-size: cover;
+  background-position: center; }
   @media only screen and (max-width: 75em) {
     .project__card {
       height: 45rem; } }
@@ -247,19 +248,22 @@ body {
         grid-row: 4/5; } }
   .project__card-4 {
     grid-row: 3/4;
-    background-image: url("../../img/nexter.png"); }
+    background-image: url("../../img/nexter.png");
+    background-position: 0% 0%; }
     @media only screen and (max-width: 50em) {
       .project__card-4 {
         grid-row: 5/6; } }
   .project__card-5 {
     grid-row: 3/4;
-    background-image: url("../../img/mapty.png"); }
+    background-image: url("../../img/mapty.png");
+    background-position: 0% 0%; }
     @media only screen and (max-width: 50em) {
       .project__card-5 {
         grid-row: 6/7; } }
   .project__card-6 {
     grid-row: 3/4;
-    background-image: url("../../img/bankist.png"); }
+    background-image: url("../../img/bankist.png");
+    background-position: 0% 0%; }
     @media only screen and (max-width: 50em) {
       .project__card-6 {
         grid-row: 7/8; } }
@@ -276,7 +280,7 @@ body {
       .project__card-8 {
         grid-row: 9/10; } }
   .project__card:hover {
-    transform: scale(1.01); }
+    transform: scale(1.1); }
   @media only screen and (max-width: 75em) {
     .project__card-1, .project__card-2 {
       grid-row: 2/3; } }
