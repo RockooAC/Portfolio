@@ -19,11 +19,24 @@
   }
 }
 
-.cert__heading {
+.cert__heading,
+.projects__heading {
   grid-column: 1/-1;
   font-size: 5.5rem;
   justify-self: center;
+  letter-spacing: 1rem;
+  font-weight: 100;
+  padding-bottom: 5rem;
+  color: transparent;
+  background-image: linear-gradient(
+    10deg,
+    $color-black 0%,
+    $color-black 66%,
+    $main-orange 66%
+  );
+  -webkit-background-clip: text;
 }
+
 /////////////////////////////////////
 // SECTION Projects
 /// //////////////////////////////////
@@ -57,12 +70,6 @@
   @media only screen and (max-width: $mini-screen) {
     padding: 5rem 3rem 10rem;
   }
-}
-
-.projects__heading {
-  grid-column: 1/-1;
-  font-size: 5.5rem;
-  justify-self: center;
 }
 
 /////////////////////////////////////

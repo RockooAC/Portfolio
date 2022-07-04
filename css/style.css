@@ -606,10 +606,17 @@ body {
     .section__certificates {
       padding: 10rem 0; } }
 
-.cert__heading {
+.cert__heading,
+.projects__heading {
   grid-column: 1/-1;
   font-size: 5.5rem;
-  justify-self: center; }
+  justify-self: center;
+  letter-spacing: 1rem;
+  font-weight: 100;
+  padding-bottom: 5rem;
+  color: transparent;
+  background-image: linear-gradient(10deg, #000 0%, #000 66%, #ff6b6b 66%);
+  -webkit-background-clip: text; }
 
 .section__projects {
   display: grid;
@@ -634,11 +641,6 @@ body {
   @media only screen and (max-width: 31.25em) {
     .section__projects {
       padding: 5rem 3rem 10rem; } }
-
-.projects__heading {
-  grid-column: 1/-1;
-  font-size: 5.5rem;
-  justify-self: center; }
 
 .section__aboutme {
   position: relative;
